@@ -115,6 +115,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Event1.cpp" />
+    <ClCompile Include="Event2.cpp" />
+    <ClCompile Include="Event3.cpp" />
+    <ClCompile Include="Event4.cpp" />
+    <ClCompile Include="IntroEvent.cpp" />
+    <ClCompile Include="OutroEvent.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Event1.h" />
+    <ClInclude Include="Event2.h" />
+    <ClInclude Include="Event3.h" />
+    <ClInclude Include="Event4.h" />
+    <ClInclude Include="IntroEvent.h" />
+    <ClInclude Include="OutroEvent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
