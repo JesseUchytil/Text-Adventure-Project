@@ -1,6 +1,9 @@
 #pragma once
-#include <string>
 #include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+#include <fstream>
 
 class Event2 {
 public:
