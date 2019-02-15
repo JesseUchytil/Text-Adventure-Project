@@ -236,13 +236,6 @@ void Event2::runEvent()
 			std::cout << "You flip all the switches back down." << std::endl;
 		}
 
-		//Room beaten
-		else if (roomBeaten == 1 && roomFinished == 0)
-		{
-			std::cout << "You flip the final switch and the door swings open" << std::endl;
-			roomFinished = 1;
-		}
-
 		//Walk through door
 		else if (message == "walk through door" && roomBeaten == 1)
 		{
@@ -471,6 +464,7 @@ void Event2::runEvent()
 					 while (switch1 == 1 && switch2 == 1 && switch3 == 1 && switch4 == 1 && roomBeaten == 0)
 					 {
 						 roomBeaten = 1;
+						 std::cout << "You flip the final switch and the door swings open" << std::endl;
 					 }
 				 }
 			 }
