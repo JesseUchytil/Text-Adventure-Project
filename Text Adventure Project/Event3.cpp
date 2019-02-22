@@ -15,7 +15,7 @@ void Event3::runEvent()
 //	std::cout << "Running event 3" << std::endl;
 
 	{
-		 int playerDecision;
+		    int playerDecision;
 
     std::cout << "In the center of the room there is a table on the computer with it. You notice that it is running some sort of video game right now. You take a look at the door and notice that it has some sort of complex locking mechanism." << std::endl;
     std::cout << "1.) Try to pick the lock of the door" << std::endl;
@@ -88,10 +88,11 @@ if (playerDecision == 1)
         }
     
     /**
-        std::cout << "You feel as though you can pick the rest of the lock by brute forcing it now. However, a tiny mouse inside of the mechanism bites your finger and steals your paperclips!" << std::endl;
+        std::cout << "You feel as though you can pick the rest of the lock by brute forstd::cing it now. However, a tiny mouse inside of the mechanism bites your finger and steals your paperclips!" << std::endl;
         std::cout << "1.) Raise your finger and try to grab him!" << std::endl;
         std::cout << "2.) Lower your finger and try to grab him!" << std::endl;
-        cin >> playerDecision;
+        std::cin >> playerDecision;
+
     */
         std::cout << "You have successfully picked the lock to the door! You open it and it leads into a closet housing a car battery. Just what you need! There appears to be another door in the closet. You open it and enter the next room..." << std::endl;
     
@@ -288,7 +289,9 @@ if (playerDecision == 2)
             }
         }
     
-    	std::cout << "[Placeholder Text] - Testing..." << std::endl;
-	}
+    std::cout << "[Placeholder Text] - Testing..." << std::endl;
+}
+		
+}
 }
 }
