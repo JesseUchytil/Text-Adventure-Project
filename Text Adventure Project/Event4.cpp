@@ -6,7 +6,7 @@ Event4::Event4()
 
 void Event4::runEvent()
 {
-	std::cout << "Running event 4" << std::endl;
+//	std::cout << "Running event 4" << std::endl;
 	//A bool that shall help decide when to close out of the program
 	bool quit = false;
 

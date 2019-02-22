@@ -227,6 +227,7 @@ void Event1::runEvent()
 		}
 	}
 	std::cout << "\nWith the message of success displaying on screen, you hear a loud 'clunk' sound"
-		<< "\nfrom the door leading to the next room.  Pressing forward, you move through the"
+		<< "\nfrom the door leading to the next room.  Along with this, a toolbox has appeared in the middle of the"
+		<< "\nroom, waiting for you to take it.  Pressing forward, you grab the box and move through the"
 		<< "\ndoor into the next room. \n\n";
 }
