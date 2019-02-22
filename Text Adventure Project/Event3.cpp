@@ -191,7 +191,7 @@ if (playerDecision == 2)
                 if (playerDecision == 3)
                 {
                     powerCharge = powerCharge-1;
-                    while (powerCharge > 0)
+                    if (powerCharge > 0)
                     {
                         powerAttack = rand()%16+15;
                         std::cout << "You swing a power attack at the goblin and deal " << powerAttack << " damage. ";
@@ -245,7 +245,6 @@ if (playerDecision == 2)
                         std::cout << "The goblin punches you and you take " << goblinDamage << " damage. ";
                         playerHP = playerHP - goblinDamage;
                         std::cout << "You have " << playerHP << " health left." << std::endl;
-                        clear();
                     }
                 }
                 
