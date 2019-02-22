@@ -137,7 +137,7 @@ void Event2::runEvent()
 		{
 			std::cout << "You see an open birdcage with what looks like a key to a door inside" << std::endl;
 		}
-		else if (message == ("look at birdcage") && roomBeaten == 0 && key == 1)
+		else if (message == ("look at birdcage") && roomBeaten == 1 && key == 1)
 		{
 			std::cout << "You see an empty birdcage" << std::endl;
 		}
