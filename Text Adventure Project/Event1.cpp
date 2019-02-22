@@ -2,7 +2,7 @@
 
 bool Event1::runMathGame()
 {
-	const int EASY = 50;
+	const int EASY = 40;
 	const int MEDIUM = 16;
 	const int HARD = 6;
 
@@ -17,7 +17,8 @@ bool Event1::runMathGame()
 	int mode;
 	int problem[3];
 
-	std::cout << "Which difficulty would you like? 2 minutes time limit for each difficulty." << std::endl
+	std::cout << "Welcome to the math game!  Can you solve all the problems in time?" << std::endl
+		<< "Which difficulty would you like? 2 minutes time limit for each difficulty." << std::endl
 		<< "\t1) Easy (" << EASY << " simplistic problems)" << std::endl
 		<< "\t2) Medium (" << MEDIUM << " somewhat difficult problems)" << std::endl
 		<< "\t3) Hard (" << HARD << " fairly difficult problems, recommended to bring paper to solve)" << std::endl;
@@ -76,7 +77,7 @@ bool Event1::runMathGame()
 				createMultiplicationProblem(1, 10, problem);
 				break;
 			case 2:
-				createMultiplicationProblem(1, 50, problem);
+				createMultiplicationProblem(10, 20, problem);
 				break;
 			case 3:
 				createMultiplicationProblem(10, 100, problem);
@@ -192,31 +193,41 @@ Event1::Event1()
 
 void Event1::runEvent()
 {
-	std::cout << "Running event 1" << std::endl;
+//	std::cout << "Running event 1" << std::endl;
+	std::cout << "\n\n\nEntering the first room, you are greeted by a mostly empty room.  \n"
+		<< "Aside from the door you came through, the only things in the room are \n"
+		<< "another door (assumedly leading to the next room) and a computer screen with a \n"
+		<< "number keypad in front of it.  Approaching the screen, you are greeted \n"
+		<< "with a set of choices on it.  Without any other choice, you decide to \n"
+		<< "follow the instructions on the screen. \n\n";
 
 	bool success = false;
 	std::string input = "";
 	
 	while (!success) {
-		std::cout << "Please enter the game you want to play: (math or english) ";
-		while (true) {
-			std::cin >> input;
-			if (input == "math") {
+//		std::cout << "Please enter the game you want to play: (math or english) ";
+//		while (true) {
+//			std::cin >> input;
+//			if (input == "math") {
 				success = runMathGame();
-				break;
-			}
-			else if (input == "english") {
-				success = runEnglishGame();
-				break;
-			}
-			else {
-				std::cout << "Unrecognized input; pleast input either 'english' or 'math': ";
-			}
-		}
+//				break;
+//			}
+//			else if (input == "english") {
+//				success = runEnglishGame();
+//				break;
+//			}
+//			else {
+//				std::cout << "Unrecognized input; pleast input either 'english' or 'math': ";
+//			}
+//		}
 		if (!success) {
-			std::cout << "Unfortunately, it appears that you have lost."
+			std::cout << std::endl << "Unfortunately, it appears that you have failed."
 				<< "\nAlso unfortunately, this means you are stuck until you win at least one round of one game."
 				<< "\nPlease prepare yourself and try again when you are really ready.\n";
 		}
 	}
+	std::cout << "\nWith the message of success displaying on screen, you hear a loud 'clunk' sound"
+		<< "\nfrom the door leading to the next room.  Along with this, a toolbox has appeared in the middle of the"
+		<< "\nroom, waiting for you to take it.  Pressing forward, you grab the box and move through the"
+		<< "\ndoor into the next room. \n\n";
 }

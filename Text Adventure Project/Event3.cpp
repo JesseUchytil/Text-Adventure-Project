@@ -7,12 +7,12 @@ Event3::Event3()
 
 void clear()
 {
-    cout << string(100, '\n');
+    std::cout << std::string(100, '\n');
 }
 
 void Event3::runEvent()
 {
-	std::cout << "Running event 3" << std::endl;
+//	std::cout << "Running event 3" << std::endl;
 
 	{
 		    int playerDecision;
@@ -92,6 +92,7 @@ if (playerDecision == 1)
         std::cout << "1.) Raise your finger and try to grab him!" << std::endl;
         std::cout << "2.) Lower your finger and try to grab him!" << std::endl;
         std::cin >> playerDecision;
+
     */
         std::cout << "You have successfully picked the lock to the door! You open it and it leads into a closet housing a car battery. Just what you need! There appears to be another door in the closet. You open it and enter the next room..." << std::endl;
     
@@ -291,5 +292,6 @@ if (playerDecision == 2)
     std::cout << "[Placeholder Text] - Testing..." << std::endl;
 }
 		
+}
 }
 }
