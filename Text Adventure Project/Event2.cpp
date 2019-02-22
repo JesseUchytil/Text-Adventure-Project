@@ -24,6 +24,10 @@ void Event2::runEvent()
 	bool key = 0;
 	bool doorOpened = 0;
 
+	//Clear Cin
+	std::cin.ignore();
+
+
 	//Game
 	while (gameplay)
 	{
@@ -39,7 +43,6 @@ void Event2::runEvent()
 
 		//Take input
 		std::cout << std::endl << "What will you do? (Type ""help"" to get more information)" << std::endl;
-		//std::cin.ignore();
 		getline(std::cin, message);
 
 		//Create a few line buffer
