@@ -11,7 +11,8 @@ std::cout << "You can't believe this has happened again" << std::endl;
 std::cout << "This car has broken down so may times now, and this time it's in the middle of nowhere." << std::endl;
 std::cout << "You look up from the hood of your car to see nothing for miles" << std::endl << std::endl;
 
-std::cout << "You look back down again to find the problem. It seems to be the battery" << std::endl;
+std::cout << "You look back down again to find the problem. It seems to be a sparkplug and the battery." << std::endl;
+std::cout << "It seems like you will also need a toolbox to fix this." << std::endl;
 std::cout << "Your head pops back up again to see if anyone is on the road." << std::endl;
 std::cout << "You look closely and off in the distance there seems to be a little house" << std::endl << std::endl;
 
