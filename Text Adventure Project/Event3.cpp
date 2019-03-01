@@ -24,7 +24,7 @@ void Event3::runEvent()
     std::cout << "In the center of the room there is a table on the computer with it. You notice that it is running some sort of video game right now. You take a look at the door and notice that it has some sort of complex locking mechanism." << std::endl;
     std::cout << "1.) Try to pick the lock of the door" << std::endl;
     std::cout << "2.) Play the video game." << std::endl;
-    std::cin >> playerDecision;
+    std::cin>> playerDecision;
     clear();
  
 if (playerDecision == 1)
@@ -430,7 +430,7 @@ if (playerDecision == 2)
         std::cout << "1.) Na" << std::endl;
         std::cout << "2.) Fe" << std::endl;
         std::cout << "3.) K" <<  std::endl;
-        cin >> playerDecision;
+        std::cin >> playerDecision;
         clear();
         
         if (playerDecision == 1)
@@ -439,7 +439,7 @@ if (playerDecision == 2)
             std::cout << "4.) Fl" << std::endl;
             std::cout << "5.) Cl" << std::endl;
             std::cout << "6.) Br" << std::endl;
-            cin >>playerDecision;
+            std::cin >>playerDecision;
             clear();
             
             if (playerDecision == 4)
@@ -472,7 +472,7 @@ if (playerDecision == 2)
             std::cout << "4.) Fl" << std::endl;
             std::cout << "5.) Cl" << std::endl;
             std::cout << "6.) Br" << std::endl;
-            cin >>playerDecision;
+            std::cin >>playerDecision;
             clear();
 
             if (playerDecision == 4)
@@ -506,7 +506,7 @@ if (playerDecision == 2)
             std::cout << "4.) Fl" << std::endl;
             std::cout << "5.) Cl" << std::endl;
             std::cout << "6.) Br" << std::endl;
-            cin >>playerDecision;
+            std::cin >>playerDecision;
             clear();
 
             if (playerDecision == 4)
@@ -561,7 +561,7 @@ if (playerDecision == 2)
     
     std::cout << "1.) 'Hand over the princess!' " << std::endl;
     std::cout << "2.) 'Why are you wearing the princess' dress?!' " << std::endl;
-    cin >> playerDecision;
+    std::cin >> playerDecision;
     clear();
     
     if (playerDecision == 1 || playerDecision == 2)
@@ -819,4 +819,4 @@ if (playerDecision == 2)
 		
 }
 }
-}
+
