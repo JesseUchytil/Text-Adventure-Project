@@ -1,13 +1,3 @@
-#include "Event4.h"
-
-Event4::Event4()
-{
-}
-
-void Event4::runEvent()
-{
-	std::cout << "Running event 4" << std::endl;
-}
 /*
 *	Manuel Corral Ledezma	
 *	mcorralledezma@dmacc.edu
@@ -23,16 +13,20 @@ void dungeonRoom1(){
 	//A bool that shall help decide when to close out of the program
 	bool quit = false;
 	
+	//This int shall store 
 	int choice = 0;
+	
+	std::cout << "You enter the room in front of you is a door above the door you find the words " << endl;
 	std::cout<< "WELCOME PREPARE YOURSELF FOR A REALLY HARD PUZZLE" << endl << endl;
 	
+	//Sentinal value DEBUGGING to see if the program works
 	while(choice!=-999){
 	
 		if(quit==false){
 		
 		std ::cout << "In front of you is a door , and two keys, one blue,  and one green, what do you do?" << endl;
 		std::cout << "Press 1 to try the door, Press two to pick up the blue key, press three to pick up the green key " << endl << endl;
-		cin >> choice;
+		std::cin >> choice;
 	
 		if(choice==1){	
 			std::cout << "You try the door, Suddenly you are thrown off your feet and slam against the wall, you fall unconcious, The End for now!" << endl;
@@ -45,7 +39,7 @@ void dungeonRoom1(){
 			std::cout << "\"Now what?\" you ask yourself. " << endl << endl;
 			std::cout << "Well as the Master of this specific room i shall give you options" << endl;
 			std::cout << "press 1 to try to the door, or press two to do nothing" << endl;
-			cin >> choice;
+			std::cin >> choice;
 			
 			if(choice==1){
 				
@@ -64,21 +58,26 @@ void dungeonRoom1(){
 					else if (vhsTape == true){
 						std::cout << "Press 1 to walk to the TV, 3 to look at the blank wall " << endl;
 					}
-					cin >> choice;
+					std::cin >> choice;
 				
 				if(choice==1){
+					
 					std::cout << "You walk to the TV" << endl;
+					
+					//If the user does not have the vhs tape nothing happens to continue the story
 					if(vhsTape==false){
 						std::cout << "With nothing to do you return to the entrance of the room" << endl;
 						std::cout << "Now what?" << endl << endl;
 					}
+					//Checks to see if the user has the vhs to begin the ending sequence 
 					if(vhsTape==true){
 						std::cout << "With the VHS on hand you insert it to the TV "<< endl;
 						std::cout << "You hear a slight click and a whirr as the VHS starts to play" << endl << endl;
 						std::cout << "suddenly the lights cut out, you hear the slight whir of a VHS spinning up " << endl << endl;
 						std::cout << "all of the sudden the tv turns to purple almost like black light, but this light has some magical powers" << endl;
 						std::cout <<"you black out instantly without a seconds notice" << endl;
-						std::cout << "you win for now!" << endl;
+						std::cout << "You wake up in front of a door with a Car Muffler In Hand" << endl;
+						std::cout << "You open the door and proceed to the next room and you realized that " << endl;
 						quit = true;
 						break;
 						
@@ -129,6 +128,7 @@ void dungeonRoom1(){
 			
 		}
 	}
+	//Once the boolean quit equals true from the ending sequence the rooms ends
 	else if(quit == true){
 		break;
 	}
