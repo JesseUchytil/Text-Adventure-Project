@@ -6,14 +6,13 @@ Event2::Event2()
 
 void Event2::runEvent()
 {
+	//Zachary Showers, zcshowers@dmacc.edu
 	//Answer Variable
 	std::string message;
 	bool note = 0;
 	bool roomStart = 0;
 	bool roomFinished = 0;
 	bool gameplay = 1;
-	std::string verb1 = "look at";
-	std::string verb2 = "walk to";
 
 	//Puzzle
 	bool switch1 = 0;
@@ -176,8 +175,8 @@ void Event2::runEvent()
 		//Help
 		else if (message == ("help"))
 		{
-			std::cout << "Use verbs such as look at, walk to, pick up, or flip" << std::endl;
-			std::cout << "Some helpful nouns would be note, switch, inventory, birdcage, key, and door" << std::endl;
+			std::cout << "Use verbs such as look at, walk through, pick up, flip, reset, or read" << std::endl;
+			std::cout << "Some helpful nouns would be note, switch or switches, inventory, birdcage, key, and door" << std::endl;
 			std::cout << "Make sure to type everything in lowercase" << std::endl;
 		}
 
@@ -368,7 +367,8 @@ void Event2::runEvent()
 		//Walk through door
 		else if (message == "walk through door" && doorOpened == 1)
 		{
-			std::cout << "You walk through the door to the next room" << std::endl;
+			std::cout << "As you walk through the door to the next room you seek a sparkplug sitting next to the switches." << std::endl;
+			std::cout << "You pick it up and proceed to the next room." << std::endl;
 			gameplay = 0;
 		}
 		else
@@ -816,13 +816,8 @@ void Event2::runEvent()
 		 }
 
 	}
-	return;
+	if (gameplay == 0)
+	{
+		return;
+	}
 }
-
-/*std::string Event2::Answer()
-{
-	string m;
-	std::cout << endl << "What will you do? (Type ""help"" to get more information)" << std::endl;
-	getline(cin, m);
-	return m;
-}*/
