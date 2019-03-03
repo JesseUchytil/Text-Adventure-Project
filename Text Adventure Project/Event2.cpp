@@ -6,6 +6,7 @@ Event2::Event2()
 
 void Event2::runEvent()
 {
+	//Zachary Showers, zcshowers@dmacc.edu
 	//Answer Variable
 	std::string message;
 	bool note = 0;
