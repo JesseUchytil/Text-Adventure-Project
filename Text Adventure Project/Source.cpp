@@ -9,15 +9,15 @@
 
 using namespace std;
 
-int main() {//Congrats!  You downloaded the correct program and opened it correctly.
-	IntroEvent intEvt;
+int main() {
+	IntroEvent intEvt;//Declare all events
 	OutroEvent outEvt;
 	Event1 evt1;
 	Event2 evt2;
 	Event3 evt3;
 	Event4 evt4;
 
-	intEvt.runEvent();
+	intEvt.runEvent();//run each event in order
 	evt1.runEvent();
 	evt2.runEvent();
 	evt3.runEvent();
@@ -26,7 +26,7 @@ int main() {//Congrats!  You downloaded the correct program and opened it correc
 
 	int asdf = 0;
 
-	cin >> asdf;
+	cin >> asdf;//pause the console to prevent exit until user wants it.
 
 	return 0;
 }
