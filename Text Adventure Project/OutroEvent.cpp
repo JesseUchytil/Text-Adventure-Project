@@ -6,8 +6,6 @@ OutroEvent::OutroEvent()
 
 void OutroEvent::runEvent()
 {
-	std::cout << "Running Outro Event" << std::endl;
-
 	std::cout << "You finish the last puzzle and see sunlight protruding through the window of the backdoor" << std::endl;
 	std::cout << "You begin to hear the voice from the first room of the house" << std::endl;
 	std::cout << "Well done guest, I can't believe anyone was able to beat those puzzles" << std::endl;

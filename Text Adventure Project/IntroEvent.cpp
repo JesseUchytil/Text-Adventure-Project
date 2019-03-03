@@ -6,7 +6,6 @@ IntroEvent::IntroEvent()
 
 void IntroEvent::runEvent()
 {
-	std::cout << "Running Intro Event" << std::endl;
 std::cout << "You can't believe this has happened again" << std::endl;
 std::cout << "This car has broken down so may times now, and this time it's in the middle of nowhere." << std::endl;
 std::cout << "You look up from the hood of your car to see nothing for miles" << std::endl << std::endl;
